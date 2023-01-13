@@ -154,6 +154,9 @@ def process_custom_sents_plain_text(
                     "text": text
                 }
 
+            if not l_idxs_ambig_item:
+                print(f"For {sent_id_orig} no instance of {ambig_item} could be identified. - Sentence text: {text}")
+
     return d_dataset
 
 
