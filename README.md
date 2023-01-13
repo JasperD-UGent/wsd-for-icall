@@ -10,7 +10,7 @@ See <code>requirements.txt</code>.
 ### Step_1
 The goal of a WSD method is to disambiguate ambiguous words, so first we need to determine which ambiguous items the method should be applied to. Additionally, the senses to be distinguished for each ambiguous item also have to be defined, and for each sense a prototypical example sentence needs to be provided. As mentioned in the introduction, these sentences constitute the core of the WSD method. All this information should be gathered in a sense inventory file, which is loaded in the first step of the <code>WSD_for_ICALL.py</code> script.
 
-The demo makes use of the sense inventory elaborated in the [NLP4CALL2022 paper](https://ecp.ep.liu.se/index.php/sltc/article/view/577) by Jasper Degraeuwe and Patrick Goethals. However, as the demo only focuses on the ambiguous item _acción_, a new sense inventory file <code>demoProject.json</code> was created with <code>"acción|NOUN|f"</code> as the sole entry. To consult the full inventory and to find more details on its structure, you can visit the corresponding [GitHub repository](https://github.com/JasperD-UGent/sense-inventory-economics-50). For more details on its elaboration, please refer to the NLP4CALL2022 paper.
+The demo makes use of the sense inventory elaborated in the [NLP4CALL2022 paper](https://ecp.ep.liu.se/index.php/sltc/article/view/577) by Jasper Degraeuwe and Patrick Goethals<sup>[[1]](#references)</sup>. However, as the demo only focuses on the ambiguous item _acción_, a new sense inventory file <code>demoProject.json</code> was created with <code>"acción|NOUN|f"</code> as the sole entry. To consult the full inventory and to find more details on its structure, you can visit the corresponding [GitHub repository](https://github.com/JasperD-UGent/sense-inventory-economics-50). For more details on its elaboration, please refer to the NLP4CALL2022 paper.
 
 **NOTE**: when providing your own sense inventory, make sure the underlying dictionary follows the exact same structure as the demo file. For more information, you can again consult the [GitHub repository](https://github.com/JasperD-UGent/sense-inventory-economics-50) of the original inventory.
 
@@ -50,3 +50,6 @@ The third and final data source is custom data which have not been preprocessed 
   2. Sentence text in one string
 
 The demo data (for the ambiguous feminine noun _acción_, taken from the UD Spanish GSD treebank) are located in the <code>input/dataset_raw/custom_plain_text/demo</code> directory.
+
+## References
+- Degraeuwe, Jasper, and Patrick Goethals. 2022. “Interactive Word Sense Disambiguation in Foreign Language Learning.” In Proceedings of the 11th Workshop on Natural Language Processing for Computer-Assisted Language Learning (NLP4CALL 2022), ed by. David Alfter, Elena Volodina, Thomas François, Piet Desmet, Frederik Cornillie, Arne Jönsson, and Evelina Rennes, 190:46–54. Louvain-la-Neuve: Linköping University Electronic Press. [doi:10.3384/ecp190005](doi:10.3384/ecp190005).
