@@ -3,7 +3,7 @@ This module allows you to perform word sense disambiguation (WSD) for Intelligen
 
 **NOTE**: the WSD method is initialised trough the <code>WSD_for_ICALL.py</code> script. Normally, this script should be the only one you need to modify in order to be able to apply the WSD method to your own data and to set the parameters to the values of your choice.
 
-##Required Python modules
+## Required Python modules
 See <code>requirements.txt</code>.
 
 ## Method
