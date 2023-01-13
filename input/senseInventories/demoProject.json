@@ -1,0 +1,211 @@
+{
+  "acci\u00f3n|NOUN|f": {
+    "1": {
+      "description_ES": "actividad o efecto realizado por un agente",
+      "l_example_sents": [
+        {
+          "toks": [
+            "Premiaron",
+            "su",
+            "buena",
+            "acci\u00f3n",
+            "."
+          ],
+          "idx_ambig_item": 3,
+          "source": "Clave"
+        },
+        {
+          "toks": [
+            "No",
+            "te",
+            "cre\u00eda",
+            "capaz",
+            "de",
+            "una",
+            "acci\u00f3n",
+            "tan",
+            "vil",
+            "."
+          ],
+          "idx_ambig_item": 6,
+          "source": "Clave"
+        },
+        {
+          "toks": [
+            "La",
+            "acci\u00f3n",
+            "de",
+            "la",
+            "erosi\u00f3n",
+            "modela",
+            "el",
+            "paisaje",
+            "."
+          ],
+          "idx_ambig_item": 1,
+          "source": "Clave"
+        },
+        {
+          "toks": [
+            "Necesitan",
+            "gente",
+            "de",
+            "acci\u00f3n",
+            "que",
+            "pueda",
+            "resolver",
+            "los",
+            "problemas",
+            "que",
+            "se",
+            "presenten",
+            "."
+          ],
+          "idx_ambig_item": 3,
+          "source": "Clave"
+        },
+        {
+          "toks": [
+            "Dejemos",
+            "de",
+            "hablar",
+            "y",
+            "pasemos",
+            "a",
+            "la",
+            "acci\u00f3n",
+            "."
+          ],
+          "idx_ambig_item": 7,
+          "source": "Clave"
+        },
+        {
+          "toks": [
+            "Todos",
+            "aquellos",
+            "atentados",
+            "fueron",
+            "realizados",
+            "por",
+            "grupos",
+            "que",
+            "defend\u00edan",
+            "la",
+            "acci\u00f3n",
+            "directa",
+            "."
+          ],
+          "idx_ambig_item": 10,
+          "source": "Clave"
+        }
+      ]
+    },
+    "2": {
+      "description_ES": "argumento de un relato",
+      "l_example_sents": [
+        {
+          "toks": [
+            "La",
+            "acci\u00f3n",
+            "de",
+            "esa",
+            "pel\u00edcula",
+            "transcurre",
+            "en",
+            "la",
+            "selva",
+            "."
+          ],
+          "idx_ambig_item": 1,
+          "source": "Clave"
+        }
+      ]
+    },
+    "3": {
+      "description_ES": "parte de un capital",
+      "l_example_sents": [
+        {
+          "toks": [
+            "Esta",
+            "empresa",
+            "cuenta",
+            "con",
+            "m\u00e1s",
+            "de",
+            "diez",
+            "millones",
+            "de",
+            "acciones",
+            "."
+          ],
+          "idx_ambig_item": 9,
+          "source": "Clave"
+        },
+        {
+          "toks": [
+            "Compr\u00f3",
+            "acciones",
+            "de",
+            "su",
+            "empresa",
+            "y",
+            "gan\u00f3",
+            "una",
+            "fortuna",
+            "gracias",
+            "a",
+            "ellas",
+            "."
+          ],
+          "idx_ambig_item": 1,
+          "source": "Clave"
+        }
+      ]
+    },
+    "4": {
+      "description_ES": "facultad legal para pedir alguna cosa en juicio",
+      "l_example_sents": [
+        {
+          "toks": [
+            "La",
+            "acci\u00f3n",
+            "penal",
+            "se",
+            "inicia",
+            "mediante",
+            "denuncia",
+            "o",
+            "querella",
+            "."
+          ],
+          "idx_ambig_item": 1,
+          "source": "Clave"
+        },
+        {
+          "toks": [
+            "Como",
+            "el",
+            "inquilino",
+            "no",
+            "quer\u00eda",
+            "marcharse",
+            "de",
+            "la",
+            "casa",
+            ",",
+            "la",
+            "propietaria",
+            "inici\u00f3",
+            "las",
+            "acciones",
+            "legales",
+            "oportunas",
+            "."
+          ],
+          "idx_ambig_item": 14,
+          "source": "Clave"
+        }
+      ]
+    }
+  }
+}
