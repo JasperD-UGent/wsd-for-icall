@@ -50,7 +50,7 @@ def define_type_name_query_support_data_and_update_meta(
             type_id = str((max(l_type_ids) + 1))
             type_name_query = "type" + type_id
         else:
-            type_name_query = "type" + str(1)
+            type_name_query = "type1"
 
         d_meta_copy[type_name_query] = d_criteria
         dump_json(path_direc_ambig_item, fn_meta, d_meta_copy, indent=2)
