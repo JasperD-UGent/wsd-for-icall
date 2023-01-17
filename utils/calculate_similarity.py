@@ -265,13 +265,13 @@ def link_sims_to_rest(
         if idx_iter == 0:
             d_lab_data_inp = d_lab_data
         else:
-            fn_d_lab_data_inp = f"{f_enriched_lab_data}{str(iter_number - 1)}.json"
+            fn_d_lab_data_inp = f"{f_enriched_lab_data}{(iter_number - 1)}.json"
             d_lab_data_inp = load_json(
                 os.path.join(direc_temp, direc_enriched_lab_data, proj, sim_calc_meth, fn_d_lab_data_inp)
             )
 
         # define labelled data dictionary which needs to be updated after the similarity calculations
-        fn_d_lab_data_to_be_upd = f"{f_enriched_lab_data}{str(iter_number)}.json"
+        fn_d_lab_data_to_be_upd = f"{f_enriched_lab_data}{iter_number}.json"
         d_lab_data_to_be_upd = define_d_lab_data_to_be_upd(
             proj, ambig_item_code, d_lab_data, direc_temp, direc_enriched_lab_data, sim_calc_meth,
             fn_d_lab_data_to_be_upd
@@ -283,7 +283,7 @@ def link_sims_to_rest(
             d_mapping_orig_new, l_d_entries_example_sents
         )
         dump_json(os.path.join(
-            direc_temp, proj, sim_calc_meth, f"{direc_iter}{str(iter_number)}", direc_sims, ambig_item_code_fns
+            direc_temp, proj, sim_calc_meth, f"{direc_iter}{iter_number}", direc_sims, ambig_item_code_fns
         ), fn_sims_rest, d_sims_rest)
 
         d_lab_data_outp = enrich_d_lab_data(
