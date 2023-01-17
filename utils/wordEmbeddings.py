@@ -76,7 +76,7 @@ def update_d_nlp(
     counter = 0
 
     for sent in d_dataset:
-        sent_id = data_type + "_" + str(data_id)
+        sent_id = f"{data_type}_{data_id}"
         data_id += 1
         d_nlp[sent_id] = {}
         l_toks_prov = copy.deepcopy(d_dataset[sent]["toks"])
@@ -161,7 +161,7 @@ def calculate_cosine_sims(
                     sent_id_orig = "_".join([sense, str(counter_n_sents_sense), str(idx_ambig_item_prov)])
                     counter_n_sents_sense += 1
 
-                    sent_id = "si_" + str(si_id)
+                    sent_id = f"si_{si_id}"
                     sent["sent_ID"] = sent_id
                     d_nlp_sents[sent_id] = {}
                     si_id += 1
