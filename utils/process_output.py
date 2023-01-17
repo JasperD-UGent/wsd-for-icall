@@ -49,9 +49,9 @@ def define_type_name_query_preds_and_update_meta(
 
         if l_type_ids:
             type_id = str((max(l_type_ids) + 1))
-            type_name_query = "type" + type_id
+            type_name_query = f"type{type_id}"
         else:
-            type_name_query = "type" + str(1)
+            type_name_query = "type1"
 
         d_meta_copy[enrich_type][type_name_query] = d_criteria
         dump_json(path_direc_type_names_preds, fn_meta, d_meta_copy, indent=2)
