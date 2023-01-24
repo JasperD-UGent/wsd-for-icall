@@ -54,7 +54,7 @@ def main():
         save_temp=save_temp
     )
 
-    # Step_4: remove temporary files if parameter 'save_temp' is True
+    # Step_4: remove temporary files if parameter 'save_temp' is False
 
     #   - call function
     remove_temp(save_temp)
