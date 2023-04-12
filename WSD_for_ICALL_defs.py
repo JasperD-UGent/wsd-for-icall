@@ -118,7 +118,7 @@ def process_dataset(
             ambig_item, pos, gender = split_ambig_item_code(ambig_item_code)
             ambig_item_code_fns = ambig_item_code.replace("|", "_")
 
-            # parameter-dependent filenames (with extension) which depend on ambiguous item
+            # parameter-dependent filenames which depend on ambiguous item
             fn_target = ambig_item_code_fns + "_target.txt"
             fn_rest = ambig_item_code_fns + "_rest.txt"
 
@@ -158,7 +158,7 @@ def process_dataset(
             print(f"\nRunning script for {ambig_item_code}.")
             ambig_item_code_fns = ambig_item_code.replace("|", "_")
 
-            # parameter-dependent filenames (with extension) which depend on ambiguous item
+            # parameter-dependent filenames which depend on ambiguous item
             fn_target = ambig_item_code_fns + "_target.txt"
             fn_rest = ambig_item_code_fns + "_rest.txt"
 
@@ -330,7 +330,7 @@ def apply_wsd_method(
         print(f"\nRunning script for {ambig_item_code}.")
         ambig_item_code_fns = ambig_item_code.replace("|", "_")
 
-        # parameter-dependent filenames (with extension) which depend on ambiguous item
+        # parameter-dependent filenames which depend on ambiguous item
         f_preds_target = "_".join([dataset_name, ambig_item_code_fns, "predictions"])
         fn_sims_rest = f"{'_'.join([dataset_name, ambig_item_code_fns, 'sims_rest'])}.json"
 
