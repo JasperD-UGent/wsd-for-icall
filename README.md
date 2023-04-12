@@ -52,4 +52,4 @@ The third and final data source is custom data which have not been preprocessed 
 The demo data (for the ambiguous feminine noun _acción_, taken from the UD Spanish GSD treebank) are located in the <code>input/dataset_raw/custom_plain_text/demo</code> directory.
 
 ## References
-- Degraeuwe, Jasper, and Patrick Goethals. 2022. “Interactive Word Sense Disambiguation in Foreign Language Learning.” In Proceedings of the 11th Workshop on Natural Language Processing for Computer-Assisted Language Learning (NLP4CALL 2022), ed by. David Alfter, Elena Volodina, Thomas François, Piet Desmet, Frederik Cornillie, Arne Jönsson, and Evelina Rennes, 190:46–54. Louvain-la-Neuve: Linköping University Electronic Press. [doi:10.3384/ecp190005](doi:10.3384/ecp190005).
+[1] Degraeuwe, J., & Goethals, P. (2022). Interactive word sense disambiguation in foreign language learning. In D. Alfter, E. Volodina, T. François, P. Desmet, F. Cornillie, A. Jönsson, & E. Rennes (Eds.), _Proceedings of the 11th Workshop on Natural Language Processing for Computer-Assisted Language Learning (NLP4CALL 2022)_ (Vol. 190, pp. 46–54). https://doi.org/10.3384/ecp190005
