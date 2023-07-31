@@ -1,5 +1,3 @@
-# Git files
-
 # virtual environment
 /venv
 
@@ -11,10 +9,6 @@
 
 # datasets
 /input/datasets_procsd
-/input/datasets_raw/custom_plain_text/economics_50
-/input/datasets_raw/custom_preprocessed/economics_50
-/input/datasets_raw/UD/v2_11
-/input/senseInventories/economics_50.json
 
 # output and temp folders
 /output
