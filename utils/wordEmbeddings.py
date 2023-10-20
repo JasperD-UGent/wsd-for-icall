@@ -56,9 +56,9 @@ def update_d_nlp(
     :param source: source of the dataset.
     :param d_dataset: dictionary containing the sentences of the target set or rest set.
     :param data_type: data type. Choose between: 'si' (for manually labelled sentences included in sense inventory),
-    'target' (for target set sentences), and 'rest' (for rest set sentences)
+        'target' (for target set sentences), and 'rest' (for rest set sentences)
     :param tup_nlp_transformers: tuple containing the Transformer resources (tokeniser at position 0, model at position
-    1, configuration at position 2 and device at position 3).
+        1, configuration at position 2 and device at position 3).
     :param d_nlp: dictionary containing the word embeddings.
     :param d_mapping_new_orig: mapping dictionary in which the new sentence IDs are linked to their original data.
     :param d_mapping_orig_new: mapping dictionary in which the original sentence data are linked to their new IDs.
@@ -125,7 +125,7 @@ def calculate_cosine_sims(
     :param d_lab_data_orig: original labelled data dictionary.
     :param dataset_source: source of the dataset.
     :param tup_nlp_transformers: tuple containing the Transformer resources (tokeniser at position 0, model at position
-    1, configuration at position 2 and device at position 3).
+        1, configuration at position 2 and device at position 3).
     :param d_target: dictionary containing the target set.
     :param d_rest: dictionary containing the rest set.
     :return: the list of cosine similarities (in a Numpy array), the labelled data dictionary and the mapping

@@ -77,7 +77,7 @@ def write_to_txt(
     :param direc_outp: name of the directory in which all output of the method is saved.
     :param direc_preds: name of the directory in which the predictions should be saved.
     :param fn: filename of the file in which the predictions (in the form of output triplets) for the target set are
-    saved.
+        saved.
     :param d_outp: dictionary containing the output to be written to the TXT file.
     :return: `None`
     """

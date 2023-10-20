@@ -28,14 +28,14 @@ def process_dataset(
 ) -> Tuple[Union[str, pathlib.Path], Union[str, pathlib.Path]]:
     """Process the raw dataset and generate the target and rest sets to which the WSD method should be applied.
     :param d_lab_data: dictionary containing the manually labelled example sentences which represent the senses included
-    in the sense inventory.
+        in the sense inventory.
     :param source: source of the dataset. Choose between: 'custom_plain_text', 'custom_preprocessed', and 'UD'.
     :param custom_dataset_name: name of the custom dataset. Only needs to be defined if the source is
-    'custom_plain_text' or 'custom_preprocessed'.
+        'custom_plain_text' or 'custom_preprocessed'.
     :param ud_version: UD version. Only needs to be defined if the source is 'UD'.
     :param ud_treebank: name of the UD treebank. Only needs to be defined if the source is 'UD'.
     :return: the path to the raw dataset files and the path to the processed dataset files (so that they do not need to
-    be defined again in the `apply_wsd_method` function).
+        be defined again in the `apply_wsd_method` function).
     """
     print("Running Step_2 ...")
 
@@ -214,28 +214,28 @@ def apply_wsd_method(
     """Apply the WSD method.
     :param proj: name of the project.
     :param d_lab_data_orig: dictionary containing the manually labelled example sentences which represent the senses
-    included in the sense inventory.
+        included in the sense inventory.
     :param dataset_source: source of the dataset. Choose between: 'custom_plain_text', 'custom_preprocessed', and 'UD'.
     :param path_dataset_raw: path to the directory in which the raw dataset files are located.
     :param path_dataset_procsd: path to the directory in which the processed dataset files are located.
     :param enrich_type: way in which the automatic addition of extra training data should be performed. Choose between:
-    'AAT' (all-above-threshold; for each sense, all rest set sentences for which both the cosine similarity value and
-    the difference with the second highest maintained value exceed the predefined thresholds in `sim_thresh_aat` and
-    `diff_thresh_aat` will be added), and 'top-N' (for each sense, the N rest set sentences with the highest cosine
-    similarity value and difference with the second highest maintained value will be added, with N being defined in
-    `n_sents_added_per_iter_top_n`).
+        'AAT' (all-above-threshold; for each sense, all rest set sentences for which both the cosine similarity value
+        and the difference with the second highest maintained value exceed the predefined thresholds in `sim_thresh_aat`
+        and `diff_thresh_aat` will be added), and 'top-N' (for each sense, the N rest set sentences with the highest
+        cosine similarity value and difference with the second highest maintained value will be added, with N being
+        defined in `n_sents_added_per_iter_top_n`).
     :param sim_calc_meth: way in which the cosine similarity should be calculated. Choose between: 'cs_max'
-    (maintained value = highest value amongst all individual values), 'cs_avg' (maintained value = average of all
-    individual values), and 'cs_max_plus_avg' (maintained value = average of `cs_max` and `cs_avg`).
+        (maintained value = highest value amongst all individual values), 'cs_avg' (maintained value = average of all
+        individual values), and 'cs_max_plus_avg' (maintained value = average of `cs_max` and `cs_avg`).
     :param sim_thresh_aat: minimal cosine similarity value a rest set sentence should have before it can be added as
-    additional training data.
+        additional training data.
     :param diff_thresh_aat: minimal difference between the top two maintained cosine similarity values a rest set
-    sentence should have before it can be added as additional training data for the top sense.
+        sentence should have before it can be added as additional training data for the top sense.
     :param n_iters_top_n: number of times the top-N procedure should be repeated. Each iteration takes into account the
-    training data automatically added during the previous iteration(s).
+        training data automatically added during the previous iteration(s).
     :param n_sents_added_per_iter_top_n: number of sentences added for each sense in the top-N setup.
     :param transformer_model_name: name of the Transformer model to be used for calculating the contextualised word
-    embeddings. Available models can be consulted at: https://huggingface.co/models.
+        embeddings. Available models can be consulted at: https://huggingface.co/models.
     :param save_temp: indicates whether or not the temp files should be saved for later reuse.
     :return: `None`
     """
