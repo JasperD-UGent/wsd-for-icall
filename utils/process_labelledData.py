@@ -14,7 +14,7 @@ def define_d_lab_data_to_be_upd(
         meth: str,
         fn: str
 ) -> Dict:
-    """Define labelled data dictionary dictionary to be updated.
+    """Define labelled data dictionary to be updated.
     :param proj: name of the project (with `enrich_type` extension).
     :param ambig_item_code: ambiguous item code.
     :param d_lab_data: labelled data dictionary from the previous iteration (used if the dictionary to be updated does
@@ -23,7 +23,7 @@ def define_d_lab_data_to_be_upd(
     :param direc_enriched_lab_data: name of the directory in which the enriched labelled data dictionaries are saved.
     :param meth: way in which the cosine similarity should be calculated.
     :param fn: filename of the labelled data dictionary to be updated.
-    :return: the labelled data dictionary dictionary in question.
+    :return: the labelled data dictionary in question.
     """
 
     if os.path.exists(os.path.join(direc_temp, direc_enriched_lab_data, proj, meth, fn)):
