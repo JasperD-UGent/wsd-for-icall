@@ -1,7 +1,7 @@
 # wsd-for-icall
 This module allows you to perform word sense disambiguation (WSD) for Intelligent Computer-Assisted Language Learning (ICALL) purposes. As input, the method takes an [ICALL-tailored sense inventory](#step_1) in which the senses are represented by prototypical example sentences. These sentences are the only manually labelled data required to initialise the method. The method targets Spanish as a foreign language and can be applied to [Universal Dependencies (UD) treebank data](#ud-treebank-data), [custom preprocessed data](#custom-preprocessed-data) or [custom plain text data](#custom-plain-text-data) as data sources. This repository includes demo data for all three possible data sources, based on the [UD Spanish GSD treebank](https://universaldependencies.org/treebanks/es_gsd/index.html). Below you can find more information on the main steps performed by the method, as well as on the data sources and where to put the dataset files. 
 
-**NOTE**: the WSD method is initialised trough the <code>WSD_for_ICALL.py</code> script. Normally, this script should be the only one you need to modify in order to be able to apply the WSD method to your own data and to set the parameters to the values of your choice.
+**NOTE**: the WSD method is initialised through the <code>WSD_for_ICALL.py</code> script. Normally, this script should be the only one you need to modify in order to be able to apply the WSD method to your own data and to set the parameters to the values of your choice.
 
 ## Required Python modules
 See <code>requirements.txt</code>.
